@@ -180,7 +180,7 @@
                 segment.titleLabel.font = self.titleFont;
             }
             
-            segment.titleLabel.alternativeTextColor = self.selectedTitleTextColor;
+            segment.titleLabel.alternativeTextColor = self.selectedAlternativeTextColor;
             segment.titleLabel.textColor = self.titleTextColor;
         } else {
             segment.titleLabel.font = self.titleFont;
@@ -513,6 +513,11 @@
 
 - (void)setSelectedTitleTextColor:(UIColor *)selectedTitleTextColor {
     _selectedTitleTextColor = selectedTitleTextColor;
+    [self setNeedsLayout];
+}
+
+- (void)setSelectedAlternativeTextColor:(UIColor *)selectedAlternativeTextColor{
+    _selectedAlternativeTextColor = selectedAlternativeTextColor;
     [self setNeedsLayout];
 }
 

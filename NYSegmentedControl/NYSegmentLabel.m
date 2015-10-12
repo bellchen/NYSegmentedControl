@@ -68,12 +68,5 @@
     }
 }
 
-- (UIColor *)alternativeTextColor {
-    if (!_alternativeTextColor) {
-        _alternativeTextColor = self.textColor;
-    }
-    
-    return _alternativeTextColor;
-}
 
 @end

@@ -49,7 +49,10 @@
  The color of the selected segment's title
  */
 @property (nonatomic) UIColor *selectedTitleTextColor UI_APPEARANCE_SELECTOR;
-
+/**
+ The Alternative color of the selected segment's title
+ */
+@property (nonatomic) UIColor *selectedAlternativeTextColor UI_APPEARANCE_SELECTOR;
 /**
  The radius of the control's corners
  */
