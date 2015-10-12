@@ -173,15 +173,14 @@
         segment.frame = CGRectMake(segmentWidth * i, 0.0f, segmentWidth, segmentHeight);
         
         if (self.stylesTitleForSelectedSegment) {
+            segment.titleLabel.alternativeTextColor = self.selectedAlternativeTextColor;
+            segment.titleLabel.textColor = self.titleTextColor;
             if (self.selectedSegmentIndex == i) {
                 segment.titleLabel.font = self.selectedTitleFont;
                 segment.titleLabel.maskFrame = segment.titleLabel.bounds;
             } else {
                 segment.titleLabel.font = self.titleFont;
             }
-            
-            segment.titleLabel.alternativeTextColor = self.selectedAlternativeTextColor;
-            segment.titleLabel.textColor = self.titleTextColor;
         } else {
             segment.titleLabel.font = self.titleFont;
             segment.titleLabel.textColor = self.titleTextColor;
