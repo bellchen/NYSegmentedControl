@@ -177,6 +177,7 @@
             segment.titleLabel.textColor = self.titleTextColor;
             if (self.selectedSegmentIndex == i) {
                 segment.titleLabel.font = self.selectedTitleFont;
+                segment.titleLabel.textColor = self.selectedTitleTextColor;
                 segment.titleLabel.maskFrame = segment.titleLabel.bounds;
             } else {
                 segment.titleLabel.font = self.titleFont;
